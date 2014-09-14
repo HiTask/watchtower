@@ -3,7 +3,15 @@ This is a simple extension over QLPreviewController allowing to display remote f
 
 I created it primarily because `QLPreviewItem` states that `previewItemURL` must be a file-type URL (local files only).
 
+This project is different from `AMPPreviewController` because this one uses `AFNetworking` 1.x and therefore is compatible with old cocoapods that use `AFNetworking` 1.x such as `RestKit` 0.20
+
 #Installation
+
+### Cocoapods
+
+```pod 'Watchtower'```
+
+### Git Submodule
 
 	$ cd your_project
 	$ git submodule add git@github.com:zats/watchtower.git Vendor/Watchtower
