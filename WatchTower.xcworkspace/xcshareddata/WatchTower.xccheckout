@@ -5,36 +5,36 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>716F3C7D-A860-4013-BFBD-1ED55FA734BB</string>
+	<string>1E1A6290-8742-413B-8351-6268F797EECC</string>
 	<key>IDESourceControlProjectName</key>
 	<string>WatchTower</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>E99E9589-2328-48DC-A405-A8A34D2F18A2</key>
-		<string>https://github.com/monsieurje/watchtower.git</string>
+		<key>664B1CDB-44ED-41E7-97BB-34784C00D453</key>
+		<string>https://github.com/HiTask/watchtower.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>WatchTower.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>E99E9589-2328-48DC-A405-A8A34D2F18A2</key>
+		<key>664B1CDB-44ED-41E7-97BB-34784C00D453</key>
 		<string>..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>https://github.com/monsieurje/watchtower.git</string>
+	<string>https://github.com/HiTask/watchtower.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>110</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>E99E9589-2328-48DC-A405-A8A34D2F18A2</string>
+	<string>664B1CDB-44ED-41E7-97BB-34784C00D453</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>E99E9589-2328-48DC-A405-A8A34D2F18A2</string>
+			<string>664B1CDB-44ED-41E7-97BB-34784C00D453</string>
 			<key>IDESourceControlWCCName</key>
-			<string>WatchTower</string>
+			<string>watchtower</string>
 		</dict>
 	</array>
 </dict>
