@@ -7,7 +7,7 @@ This project is different from `AMPPreviewController` because this one uses `AFN
 
 #Installation
 
-### Cocoapods
+### CocoaPods
 
 ```pod 'Watchtower'```
 
