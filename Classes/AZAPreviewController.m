@@ -51,7 +51,6 @@ static NSString *AZALocalFilePathForURL(NSURL *URL)
 
 @interface AZAPreviewController () <QLPreviewControllerDataSource, QLPreviewControllerDelegate>
 @property (nonatomic, strong) AFHTTPClient *httpClient;
-@property (nonatomic, weak) id<QLPreviewControllerDataSource> actualDataSource;
 @end
 
 @implementation AZAPreviewController
@@ -67,6 +66,8 @@ static NSString *AZALocalFilePathForURL(NSURL *URL)
 	NSURL *baseURL = [NSURL URLWithString:@"http://example.com"];
 	self.httpClient = [[AFHTTPClient alloc] initWithBaseURL:baseURL];
 	
+	super.dataSource = self;
+	
 	return self;
 }
 
@@ -74,13 +75,7 @@ static NSString *AZALocalFilePathForURL(NSURL *URL)
 
 - (void)setDataSource:(id<QLPreviewControllerDataSource>)dataSource
 {
-	self.actualDataSource = dataSource;
-	[super setDataSource:self];
-}
-
-- (id<QLPreviewControllerDataSource>)dataSource
-{
-	return self.actualDataSource;
+	@throw [NSException exceptionWithName:@"AZAPreviewControllerException" reason:@"You need to use actualDataSource instead of dataSource. Because actually QLPreviewController is aggregated, so dataSource is for inernal usage only." userInfo:nil];
 }
 
 #pragma mark - QLPreviewControllerDataSource

@@ -11,6 +11,7 @@
 @protocol AZAPreviewControllerDelegate;
 @interface AZAPreviewController : QLPreviewController
 @property (weak) id<AZAPreviewControllerDelegate, QLPreviewControllerDelegate> delegate;
+@property (nonatomic, weak) id<QLPreviewControllerDataSource> actualDataSource;
 @end
 
 @protocol AZAPreviewControllerDelegate <NSObject>
