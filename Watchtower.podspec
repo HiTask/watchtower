@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
   spec.name         = 'Watchtower'
-  spec.version      = '1.0.1'
+  spec.version      = '1.0.2'
   spec.license      = { :type => 'Apache License, Version 2.0', :text => <<-LICENSE
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
@@ -20,8 +20,10 @@ Pod::Spec.new do |spec|
   spec.summary      = 'Extension over QLPreviewController (QuickLook) allowing to display remote files. Uses AFNetworking 1.x'
   spec.source       = { :git => 'https://github.com/HiTask/watchtower.git', :tag => '1.0.1' }
   spec.source_files = 'Classes'
+  spec.ios.resource_bundle = { 'watchtower' => 'Resources/transparent_pixel.png' }
   spec.framework    = 'SystemConfiguration','MobileCoreServices','UIKit', 'QuickLook'
   spec.dependency   'AFNetworking', '~> 1.3.0'
   spec.platform     = :ios, '7.0'
   spec.requires_arc = true
 end
+transparent_pixel

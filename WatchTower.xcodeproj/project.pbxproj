@@ -23,6 +23,7 @@
 		7CD059BC17E1ED4700B82B58 /* WatchTowerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CD059BB17E1ED4700B82B58 /* WatchTowerController.m */; };
 		7CD059BD17E1F30500B82B58 /* dribbble_debut.png in Resources */ = {isa = PBXBuildFile; fileRef = 96CB87FD16D0D3F100BCD3B3 /* dribbble_debut.png */; };
 		7CD059BF17E1F50100B82B58 /* iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7CD059BE17E1F50100B82B58 /* iPad.storyboard */; };
+		F29FF1D31FF4AF2900132382 /* transparent_pixel.png in Resources */ = {isa = PBXBuildFile; fileRef = F29FF1D21FF4AF2900132382 /* transparent_pixel.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,6 +54,7 @@
 		96CB87F316D0CD5400BCD3B3 /* QuickLook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuickLook.framework; path = System/Library/Frameworks/QuickLook.framework; sourceTree = SDKROOT; };
 		96CB87FD16D0D3F100BCD3B3 /* dribbble_debut.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dribbble_debut.png; sourceTree = "<group>"; };
 		D5575A3962500632015121B6 /* Pods-WatchTower.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WatchTower.release.xcconfig"; path = "Pods/Target Support Files/Pods-WatchTower/Pods-WatchTower.release.xcconfig"; sourceTree = "<group>"; };
+		F29FF1D21FF4AF2900132382 /* transparent_pixel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = transparent_pixel.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,6 +146,7 @@
 		96CB87FC16D0D3F100BCD3B3 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				F29FF1D21FF4AF2900132382 /* transparent_pixel.png */,
 				96CB87FD16D0D3F100BCD3B3 /* dribbble_debut.png */,
 			);
 			path = Resources;
@@ -225,6 +228,7 @@
 				7C94C8C617E1E6D4005DC66B /* Images.xcassets in Resources */,
 				7CD059BF17E1F50100B82B58 /* iPad.storyboard in Resources */,
 				7C94C8F017E1EB56005DC66B /* iPhone.storyboard in Resources */,
+				F29FF1D31FF4AF2900132382 /* transparent_pixel.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

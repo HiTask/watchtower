@@ -140,8 +140,9 @@ static NSString *AZALocalFilePathForURL(NSURL *URL)
 	}];
 	[self.httpClient enqueueHTTPRequestOperation:operation];
 	
-	// Recreates preview with empty url, in this case QLPreviewController shows loading indicator instead of preview title.
-	previewItemCopy = [AZAPreviewItem previewItemWithURL:nil
+	// Recreates preview with empty image.
+	NSURL *emptyImageURL = [[NSBundle bundleForClass:[self class]] URLForResource:@"transparent_pixel" withExtension:@"png"];
+	previewItemCopy = [AZAPreviewItem previewItemWithURL:emptyImageURL
 												   title:originalPreviewItem.previewItemTitle];
 	return previewItemCopy;
 }
