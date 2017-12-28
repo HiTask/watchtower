@@ -1,2 +1,37 @@
 xcuserdata/
 project.xcworkspace/
+Pods/Headers/Private/AFNetworking/AFHTTPClient.h
+Pods/Headers/Private/AFNetworking/AFHTTPRequestOperation.h
+Pods/Headers/Private/AFNetworking/AFImageRequestOperation.h
+Pods/Headers/Private/AFNetworking/AFJSONRequestOperation.h
+Pods/Headers/Private/AFNetworking/AFNetworkActivityIndicatorManager.h
+Pods/Headers/Private/AFNetworking/AFNetworking.h
+Pods/Headers/Private/AFNetworking/AFPropertyListRequestOperation.h
+Pods/Headers/Private/AFNetworking/AFURLConnectionOperation.h
+Pods/Headers/Private/AFNetworking/AFXMLRequestOperation.h
+Pods/Headers/Private/AFNetworking/UIImageView+AFNetworking.h
+Pods/Headers/Private/SVProgressHUD/SVProgressHUD.h
+Pods/Headers/Public/AFNetworking/AFHTTPClient.h
+Pods/Headers/Public/AFNetworking/AFHTTPRequestOperation.h
+Pods/Headers/Public/AFNetworking/AFImageRequestOperation.h
+Pods/Headers/Public/AFNetworking/AFJSONRequestOperation.h
+Pods/Headers/Public/AFNetworking/AFNetworkActivityIndicatorManager.h
+Pods/Headers/Public/AFNetworking/AFNetworking.h
+Pods/Headers/Public/AFNetworking/AFPropertyListRequestOperation.h
+Pods/Headers/Public/AFNetworking/AFURLConnectionOperation.h
+Pods/Headers/Public/AFNetworking/AFXMLRequestOperation.h
+Pods/Headers/Public/AFNetworking/UIImageView+AFNetworking.h
+Pods/Headers/Public/SVProgressHUD/SVProgressHUD.h
+Pods/Target Support Files/AFNetworking/AFNetworking-dummy.m
+Pods/Target Support Files/AFNetworking/AFNetworking-prefix.pch
+Pods/Target Support Files/AFNetworking/AFNetworking.xcconfig
+Pods/Target Support Files/Pods-WatchTower/Pods-WatchTower-acknowledgements.markdown
+Pods/Target Support Files/Pods-WatchTower/Pods-WatchTower-acknowledgements.plist
+Pods/Target Support Files/Pods-WatchTower/Pods-WatchTower-dummy.m
+Pods/Target Support Files/Pods-WatchTower/Pods-WatchTower-frameworks.sh
+Pods/Target Support Files/Pods-WatchTower/Pods-WatchTower-resources.sh
+Pods/Target Support Files/Pods-WatchTower/Pods-WatchTower.debug.xcconfig
+Pods/Target Support Files/Pods-WatchTower/Pods-WatchTower.release.xcconfig
+Pods/Target Support Files/SVProgressHUD/SVProgressHUD-dummy.m
+Pods/Target Support Files/SVProgressHUD/SVProgressHUD-prefix.pch
+Pods/Target Support Files/SVProgressHUD/SVProgressHUD.xcconfig

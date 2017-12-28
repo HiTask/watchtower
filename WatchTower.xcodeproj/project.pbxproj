@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		10942D89042538019E74E0E3 /* libPods-WatchTower.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1ACF0F3DAFBE4E4F94116A68 /* libPods-WatchTower.a */; };
 		7C94C8B617E1E6D4005DC66B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96CB87D216D0CD4A00BCD3B3 /* Foundation.framework */; };
 		7C94C8B717E1E6D4005DC66B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96CB87D416D0CD4A00BCD3B3 /* CoreGraphics.framework */; };
 		7C94C8B817E1E6D4005DC66B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96CB87D016D0CD4A00BCD3B3 /* UIKit.framework */; };
@@ -22,11 +23,11 @@
 		7CD059BC17E1ED4700B82B58 /* WatchTowerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CD059BB17E1ED4700B82B58 /* WatchTowerController.m */; };
 		7CD059BD17E1F30500B82B58 /* dribbble_debut.png in Resources */ = {isa = PBXBuildFile; fileRef = 96CB87FD16D0D3F100BCD3B3 /* dribbble_debut.png */; };
 		7CD059BF17E1F50100B82B58 /* iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7CD059BE17E1F50100B82B58 /* iPad.storyboard */; };
-		98B67E6C4F7D4C1891A7DD91 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D1BFFA0C553346268669CB10 /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		356D86C4B6E048D986F16E65 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		1ACF0F3DAFBE4E4F94116A68 /* libPods-WatchTower.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WatchTower.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		53B22264B5FBE2AA88643BD5 /* Pods-WatchTower.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WatchTower.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WatchTower/Pods-WatchTower.debug.xcconfig"; sourceTree = "<group>"; };
 		7C94C8B517E1E6D4005DC66B /* WatchTower.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WatchTower.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C94C8BB17E1E6D4005DC66B /* WatchTower-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "WatchTower-Info.plist"; sourceTree = "<group>"; };
 		7C94C8BD17E1E6D4005DC66B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -51,7 +52,7 @@
 		96CB87D416D0CD4A00BCD3B3 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		96CB87F316D0CD5400BCD3B3 /* QuickLook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuickLook.framework; path = System/Library/Frameworks/QuickLook.framework; sourceTree = SDKROOT; };
 		96CB87FD16D0D3F100BCD3B3 /* dribbble_debut.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dribbble_debut.png; sourceTree = "<group>"; };
-		D1BFFA0C553346268669CB10 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		D5575A3962500632015121B6 /* Pods-WatchTower.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WatchTower.release.xcconfig"; path = "Pods/Target Support Files/Pods-WatchTower/Pods-WatchTower.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,7 +64,7 @@
 				7C94C8B717E1E6D4005DC66B /* CoreGraphics.framework in Frameworks */,
 				7C94C8B817E1E6D4005DC66B /* UIKit.framework in Frameworks */,
 				7C94C8B617E1E6D4005DC66B /* Foundation.framework in Frameworks */,
-				98B67E6C4F7D4C1891A7DD91 /* libPods.a in Frameworks */,
+				10942D89042538019E74E0E3 /* libPods-WatchTower.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -116,7 +117,7 @@
 				96CB87FC16D0D3F100BCD3B3 /* Resources */,
 				96CB87CF16D0CD4A00BCD3B3 /* Frameworks */,
 				96CB87CE16D0CD4A00BCD3B3 /* Products */,
-				356D86C4B6E048D986F16E65 /* Pods.xcconfig */,
+				F1DE862AF24079709F3828CD /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -135,7 +136,7 @@
 				96CB87D016D0CD4A00BCD3B3 /* UIKit.framework */,
 				96CB87D216D0CD4A00BCD3B3 /* Foundation.framework */,
 				96CB87D416D0CD4A00BCD3B3 /* CoreGraphics.framework */,
-				D1BFFA0C553346268669CB10 /* libPods.a */,
+				1ACF0F3DAFBE4E4F94116A68 /* libPods-WatchTower.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -148,6 +149,15 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
+		F1DE862AF24079709F3828CD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				53B22264B5FBE2AA88643BD5 /* Pods-WatchTower.debug.xcconfig */,
+				D5575A3962500632015121B6 /* Pods-WatchTower.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -155,11 +165,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7C94C8DA17E1E6D5005DC66B /* Build configuration list for PBXNativeTarget "WatchTower" */;
 			buildPhases = (
-				466C861A86EC4BF0A63E06ED /* Check Pods Manifest.lock */,
+				3FD2D8EBDEA2BC9E56DCF353 /* [CP] Check Pods Manifest.lock */,
 				7C94C8B117E1E6D4005DC66B /* Sources */,
 				7C94C8B217E1E6D4005DC66B /* Frameworks */,
 				7C94C8B317E1E6D4005DC66B /* Resources */,
-				BAE0C129DC4045FDBC435B08 /* Copy Pods Resources */,
+				86E70FB80A974246561E296C /* [CP] Embed Pods Frameworks */,
+				CE88DB12572701E6D3692363 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -220,34 +231,55 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		466C861A86EC4BF0A63E06ED /* Check Pods Manifest.lock */ = {
+		3FD2D8EBDEA2BC9E56DCF353 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
-			name = "Check Pods Manifest.lock";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WatchTower-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		BAE0C129DC4045FDBC435B08 /* Copy Pods Resources */ = {
+		86E70FB80A974246561E296C /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Copy Pods Resources";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WatchTower/Pods-WatchTower-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CE88DB12572701E6D3692363 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-WatchTower/Pods-WatchTower-resources.sh",
+				"${PODS_ROOT}/SVProgressHUD/SVProgressHUD/SVProgressHUD.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WatchTower/Pods-WatchTower-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -291,7 +323,7 @@
 /* Begin XCBuildConfiguration section */
 		7C94C8DB17E1E6D5005DC66B /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 356D86C4B6E048D986F16E65 /* Pods.xcconfig */;
+			baseConfigurationReference = 53B22264B5FBE2AA88643BD5 /* Pods-WatchTower.debug.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -312,7 +344,7 @@
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				INFOPLIST_FILE = "WatchTower/WatchTower-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
@@ -321,7 +353,7 @@
 		};
 		7C94C8DC17E1E6D5005DC66B /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 356D86C4B6E048D986F16E65 /* Pods.xcconfig */;
+			baseConfigurationReference = D5575A3962500632015121B6 /* Pods-WatchTower.release.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -339,7 +371,7 @@
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				INFOPLIST_FILE = "WatchTower/WatchTower-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;

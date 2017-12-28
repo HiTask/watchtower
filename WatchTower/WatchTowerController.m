@@ -79,7 +79,7 @@
     
     // Preview controller
     AZAPreviewController *previewController = [AZAPreviewController new];
-    previewController.dataSource = self;
+    previewController.actualDataSource = self;
     previewController.delegate = self;
     
     [self presentViewController:previewController animated:YES completion:nil];

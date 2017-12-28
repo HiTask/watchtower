@@ -1,4 +1,6 @@
 platform :ios, '6.1'
 
-pod 'AFNetworking', '1.3.2'
-pod 'SVProgressHUD'
+target 'WatchTower' do
+	pod 'AFNetworking', '1.3.2'
+	pod 'SVProgressHUD'
+end
