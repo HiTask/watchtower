@@ -63,7 +63,7 @@ static NSString *AZALocalFilePathForURL(NSURL *URL)
 		return nil;
 	}
 	
-	// Base URL doesn't matter since we're 
+	// Base URL doesn't matter since we're
 	NSURL *baseURL = [NSURL URLWithString:@"http://example.com"];
 	self.httpClient = [[AFHTTPClient alloc] initWithBaseURL:baseURL];
 	
@@ -105,14 +105,14 @@ static NSString *AZALocalFilePathForURL(NSURL *URL)
 	if (!originalURL || [originalURL isFileURL]) {
 		return previewItemCopy;
 	}
-
+	
 	// If it's a remote file, check cache
 	NSString *localFilePath = AZALocalFilePathForURL(originalURL);
 	previewItemCopy.previewItemURL = [NSURL fileURLWithPath:localFilePath];
 	if ([[NSFileManager defaultManager] fileExistsAtPath:localFilePath]) {
 		return previewItemCopy;
 	}
-
+	
 	// If it's not a local file, put a placeholder instead
 	__block NSInteger capturedIndex = index;
 	NSURLRequest *request = [NSURLRequest requestWithURL:originalURL];
@@ -125,12 +125,12 @@ static NSString *AZALocalFilePathForURL(NSURL *URL)
 																error:&error];
 			dispatch_async(dispatch_get_main_queue(), ^{
 				[self hideActivityView];
-
+				
 				if (!didWriteFile) {
 					if ([self.delegate respondsToSelector:@selector(AZA_previewController:failedToLoadRemotePreviewItem:withError:)]) {
 						[self.delegate AZA_previewController:self
-						   failedToLoadRemotePreviewItem:originalPreviewItem
-											   withError:error];
+							   failedToLoadRemotePreviewItem:originalPreviewItem
+												   withError:error];
 					}
 					return;
 				}
@@ -140,13 +140,13 @@ static NSString *AZALocalFilePathForURL(NSURL *URL)
 					[controller refreshCurrentPreviewItem];
 				}
 			});
-
+			
 		});
 	} failure:^(AFHTTPRequestOperation *operation, NSError *error) {
 		if ([self.delegate respondsToSelector:@selector(AZA_previewController:failedToLoadRemotePreviewItem:withError:)]) {
 			[self.delegate AZA_previewController:self
-			   failedToLoadRemotePreviewItem:originalPreviewItem
-								   withError:error];
+				   failedToLoadRemotePreviewItem:originalPreviewItem
+									   withError:error];
 			dispatch_async(dispatch_get_main_queue(), ^{
 				[self hideActivityView];
 			});
@@ -157,10 +157,7 @@ static NSString *AZALocalFilePathForURL(NSURL *URL)
 		[self showActivityView];
 	});
 	
-	// Creates preview with empty image.
-	NSURL *emptyImageURL = [[NSBundle bundleForClass:[self class]] URLForResource:@"transparent_pixel" withExtension:@"png"];
-	previewItemCopy = [AZAPreviewItem previewItemWithURL:emptyImageURL
-												   title:originalPreviewItem.previewItemTitle];
+	previewItemCopy = [AZAPreviewController emptyPreviewItem];
 	return previewItemCopy;
 }
 
@@ -200,5 +197,10 @@ static NSString *AZALocalFilePathForURL(NSURL *URL)
 	
 }
 
++ (id <QLPreviewItem>)emptyPreviewItem {
+	NSURL *emptyImageURL = [[NSBundle bundleForClass:[self class]] URLForResource:@"transparent_pixel" withExtension:@"png"];
+	return [AZAPreviewItem previewItemWithURL:emptyImageURL title:@""];
+}
 
 @end
+
