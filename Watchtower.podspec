@@ -26,4 +26,3 @@ Pod::Spec.new do |spec|
   spec.platform     = :ios, '7.0'
   spec.requires_arc = true
 end
-transparent_pixel
