@@ -51,6 +51,7 @@ static NSString *AZALocalFilePathForURL(NSURL *URL)
 
 @interface AZAPreviewController () <QLPreviewControllerDataSource, QLPreviewControllerDelegate>
 @property (nonatomic, strong) AFHTTPClient *httpClient;
+@property(strong, nonatomic) UIActivityIndicatorView *activityView;
 @end
 
 @implementation AZAPreviewController
@@ -70,6 +71,14 @@ static NSString *AZALocalFilePathForURL(NSURL *URL)
 	
 	return self;
 }
+
+
+- (void)viewDidLayoutSubviews {
+	[super viewDidLayoutSubviews];
+	
+	[self moveActivityViewToCenter];
+}
+
 
 #pragma mark - Properties
 
@@ -115,6 +124,8 @@ static NSString *AZALocalFilePathForURL(NSURL *URL)
 															  options:0
 																error:&error];
 			dispatch_async(dispatch_get_main_queue(), ^{
+				[self hideActivityView];
+
 				if (!didWriteFile) {
 					if ([self.delegate respondsToSelector:@selector(AZA_previewController:failedToLoadRemotePreviewItem:withError:)]) {
 						[self.delegate AZA_previewController:self
@@ -129,22 +140,65 @@ static NSString *AZALocalFilePathForURL(NSURL *URL)
 					[controller refreshCurrentPreviewItem];
 				}
 			});
-			
+
 		});
 	} failure:^(AFHTTPRequestOperation *operation, NSError *error) {
 		if ([self.delegate respondsToSelector:@selector(AZA_previewController:failedToLoadRemotePreviewItem:withError:)]) {
 			[self.delegate AZA_previewController:self
 			   failedToLoadRemotePreviewItem:originalPreviewItem
 								   withError:error];
+			dispatch_async(dispatch_get_main_queue(), ^{
+				[self hideActivityView];
+			});
 		}
 	}];
 	[self.httpClient enqueueHTTPRequestOperation:operation];
+	dispatch_async(dispatch_get_main_queue(), ^{
+		[self showActivityView];
+	});
 	
-	// Recreates preview with empty image.
+	// Creates preview with empty image.
 	NSURL *emptyImageURL = [[NSBundle bundleForClass:[self class]] URLForResource:@"transparent_pixel" withExtension:@"png"];
 	previewItemCopy = [AZAPreviewItem previewItemWithURL:emptyImageURL
 												   title:originalPreviewItem.previewItemTitle];
 	return previewItemCopy;
 }
+
+
+#pragma mark - Private Methods
+
+
+- (void)showActivityView {
+	[self hideActivityView];
+	
+	[self.view layoutIfNeeded];
+	
+	self.activityView = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleGray];
+	[self.activityView startAnimating];
+	[self.view addSubview:self.activityView];
+	self.activityView.hidden = NO;
+	self.activityView.autoresizingMask = UIViewAutoresizingNone;
+}
+
+
+- (void)hideActivityView {
+	if (self.activityView != nil) {
+		[self.activityView stopAnimating];
+		[self.activityView removeFromSuperview];
+		self.activityView = nil;
+	}
+}
+
+
+- (void)moveActivityViewToCenter {
+	if (self.activityView != nil) {
+		self.activityView.frame = CGRectMake(self.view.center.x - self.activityView.frame.size.width / 2
+											 , self.view.center.y - self.activityView.frame.size.height / 2
+											 , self.activityView.frame.size.width
+											 , self.activityView.frame.size.height);
+	}
+	
+}
+
 
 @end
