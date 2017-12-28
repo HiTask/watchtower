@@ -20,7 +20,7 @@ Pod::Spec.new do |spec|
   spec.summary      = 'Extension over QLPreviewController (QuickLook) allowing to display remote files. Uses AFNetworking 1.x'
   spec.source       = { :git => 'https://github.com/HiTask/watchtower.git', :tag => spec.version.to_s }
   spec.source_files = 'Classes/*.{h,m}'
-  spec.ios.resource_bundle = { 'Watchtower' => 'Resources/transparent_pixel.png' }
+  spec.resources    = ['Resources/transparent_pixel.png']
   spec.framework    = 'SystemConfiguration','MobileCoreServices','UIKit', 'QuickLook'
   spec.dependency   'AFNetworking', '~> 1.3.0'
   spec.platform     = :ios, '7.0'
