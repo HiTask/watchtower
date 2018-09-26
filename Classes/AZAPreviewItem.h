@@ -15,7 +15,7 @@
 
 + (AZAPreviewItem *)previewItemWithURL:(NSURL *)URL title:(NSString *)title;
 
-@property (readwrite) NSURL *previewItemURL;
-@property (readwrite) NSString *previewItemTitle;
+@property (readwrite, nullable, nonatomic) NSURL *previewItemURL;
+@property (readwrite, nullable, nonatomic) NSString *previewItemTitle;
 
 @end

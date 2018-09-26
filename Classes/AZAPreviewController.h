@@ -10,7 +10,7 @@
 
 @protocol AZAPreviewControllerDelegate;
 @interface AZAPreviewController : QLPreviewController
-@property (weak) id<AZAPreviewControllerDelegate, QLPreviewControllerDelegate> delegate;
+@property (nonatomic, weak, nullable) id<AZAPreviewControllerDelegate, QLPreviewControllerDelegate> delegate;
 // This property must be used instead of dataSource from the base class.
 @property (nonatomic, weak) id<QLPreviewControllerDataSource> actualDataSource;
 
